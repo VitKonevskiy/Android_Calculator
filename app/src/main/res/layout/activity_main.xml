@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp">
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/prevResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"/>
+    <TextView
+        android:id="@+id/operand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"/>
+
+    <EditText
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/operandPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_weight="25"/>
+        <Button
+            android:id="@+id/operandMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="25"/>
+        <Button
+            android:id="@+id/operandMult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_weight="25"/>
+        <Button
+            android:id="@+id/operandDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_weight="25"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mcButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MC"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/msButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MS"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/mrButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MR"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/mPlusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M+"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/mMinusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M-"
+            android:layout_weight="20"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResult"
+        android:text="Result"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculateButton"
+        android:text="Calculate"/>
+
+
+</LinearLayout>
